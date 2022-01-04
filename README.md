@@ -82,12 +82,6 @@ sudo systemctl enable jenkins
 ```
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
-
-
-
-
-sudo systemctl daemon-reload
-
 ```
 You must get a response printed as `OK`
 
@@ -106,7 +100,7 @@ sudo yum upgrade
 sudo yum install epel-release java-11-openjdk-devel
 ```
 
-IF epel-release doesnt work with above command, use the below
+IF **yum install epel-release doesnt work** use the below
 
 ```
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
