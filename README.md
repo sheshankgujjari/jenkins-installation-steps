@@ -14,6 +14,8 @@
 
 **You should have** `Linux OS` like Ubuntu, `Java` (OpenJDK 11) & `Docker` installed
 
+**Install Git on the machine** `yum install git`
+
 ## Description
 
 This project was created to install Jenkins on a local machine (Ubuntu 16.04) and create a basic pipeline with GitHub & Docker
@@ -104,6 +106,20 @@ IF **yum install epel-release doesnt work** use the below
 
 ```
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+```
+
+
+IF **yum install java-11-openjdk-devel** show the below
+Updating Subscription Management repositories.
+Unable to read consumer identity
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+
+**Edit the /etc/yum/pluginconf.d/subscription-manager.conf**
+
+```
+vi /etc/yum/pluginconf.d/subscription-manager.conf
+
+enabled=0
 ```
 
 
@@ -225,4 +241,16 @@ Now we are ready to integrate any GitHub repository with Jenkins
 
 9. Now in the `Jenkinsfile` in the `environment` set the ID
 
-The pipeline is now created, push code to GitHub to see the pipeline run
+The pipeline is now created, push code to GitHub to see the pipeline 
+
+
+
+### Java Maven Project
+
+1. Navigate to `Dashboard->> Manage Jenkins ->> Manage Plugin`
+
+2. Now search for `GitHub Integration Plugin` and `Maven Integration Plugin` and click on Download now and install after restart.
+
+3. Navigate to `Dashboard->> Manage Jenkins->> Global tool Configuration`
+
+4. 
