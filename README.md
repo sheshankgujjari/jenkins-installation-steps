@@ -223,7 +223,7 @@ Now we are ready to integrate any GitHub repository with Jenkins
 
 6. In the `Source Code Management (SCM)` tab, select `Git` enter GitHub repository URL, and save
 
-7. Now copy [Jenkinsfile](Jenkinsfile) in your repository base path
+7. Now copy `Jenkinsfile`in your repository base path
 
 8. Add Docker credentials to Jenkins host
 
