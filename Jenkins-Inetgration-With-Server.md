@@ -12,6 +12,8 @@ Your identification has been saved in /root/.ssh/id_rsa.
 Your public key has been saved in /root/.ssh/id_rsa.pub.
 
 5. Copy the private key from ```/root/.ssh/id_rsa```
+6. Copy the public key to the authorized_keys to authenticate with the target server
+cat id_rsa.pub >> ~/.ssh/authorized_keys
 
 
 ### Using Publish Over SSH plugin
